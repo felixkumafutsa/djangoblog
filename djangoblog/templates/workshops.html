@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- ======= Hero Section ======= -->
+  <section id="hero1" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-4 order-2 order-lg-1 d-flex  justify-content-center">
+          <h3 style="font-weight:700; color:white;"></h3>
+        </div>
+        <div class="col-lg-4 order-2 order-lg-1 d-flex  justify-content-center">
+          <h1 style="font-weight:700; color:white; background-color:#333;border-radius:7/px;padding:7px;">STEM Workshops</h1>
+        </div>
+        <div class="col-lg-4 order-2 order-lg-1 d-flex  justify-content-center">
+          <h3 style="font-weight:700; color:white;"></h3>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+<!-- Start #main -->  
+  <main id="main">
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container">
+            <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="row">
+
+                    <div class="col-md-2  d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'electric_propella_car' %}">Science</a></button>
+                    </div>
+                    <div class="col-md-2  d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'electricity_and_magnetism' %}">Science</a></button>
+                    </div>
+        
+                    <div class="col-md-2  d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'intro_to_coding' %}">Science</a></button>
+                    </div>
+        
+                    <div class="col-md-2  d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'renewable_energy' %}">Science</a></button>
+                    </div>
+                    
+                    <div class="col-md-2 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'stop_motion_animation' %}">Science</a></button>
+                    </div>
+
+                    <div class="col-md-2  d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                      <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'structural_engineering' %}">Science</a></button>
+                  </div>
+          </div>
+        </div>
+      </section><!-- End Services Section -->
+  
+          <div class="row justify-content-center">
+            <div class="col-lg-10 pt-12 pt-lg-0">
+
+              <p data-aos="fade-up" data-aos-delay="100">
+                Designing and delivering engaging, hands-on STEM outreach workshops for primary schools is our
+                passion and primary focus. We strive to equip young girls with the skills and knowledge needed to
+                excel in the fields of Science, Technology, Engineering, and Mathematics. Our carefully designed
+                workshops are tailored to spark curiosity and interest in STEM while introducing girls to a wide
+                range of potential career paths.
+              </p>
+
+              <p data-aos="fade-up" data-aos-delay="100">
+                Our workshops offer a diverse range of subjects and hands-on activities, including our Renewable
+                Energy workshop. In this workshop, girls learn about the importance of renewable energy and how it
+                can be harnessed to create a more sustainable future. Girls also have the opportunity to build and
+                test their own wind turbines, learning the basics of mechanical engineering along the way.
+              </p>
+
+
+              <p data-aos="fade-up" data-aos-delay="100">
+                Our Stop motion animation workshop is another popular option, which allows girls to learn and
+                create stop motion animation videos while developing skills in technology, creativity, and teamwork
+              </p>
+
+              <p data-aos="fade-up" data-aos-delay="100">
+                The Introduction to Coding workshop introduces girls to basic programming concepts and
+                age-appropriate software, providing them with essential skills for a digital world. The Structural
+                Engineering workshop teaches girls fundamental principles of engineering design, as they construct
+                and test their own structures, learning about load-bearing capacity, stability, and durability.
+              </p>
+
+              <p data-aos="fade-up" data-aos-delay="100">
+                In our Electric Propeller Car workshop, girls can design and build their own electric cars while
+                exploring the underlying principles of electrical engineering. The Electricity and Magnetism
+                workshop provides a fun and interactive way for girls to learn about these fundamental scientific
+                concepts, which are critical for many STEM careers.
+              </p>
+
+              <p data-aos="fade-up" data-aos-delay="100">
+                For more information about our individual STEM workshops, please visit the Primary School STEM
+                Workshops section on our home page. There, you will find comprehensive details about each
+                workshop, including descriptions, learning outcomes, target age groups, schools reached, and the
+                number of girls targeted.
+              </p>
+
+              <p data-aos="fade-up" data-aos-delay="100">
+                We are constantly expanding our range of workshops to include new and exciting topics, such as
+                our Coding with Robots workshop. This workshop introduces girls to the exciting world of robotics,
+                showing them how coding is integral to the field.
+              </p>
+
+              <p data-aos="fade-up" data-aos-delay="100">
+                Through our STEM workshops, we hope to empower and inspire young girls to pursue their
+                passions and interests in STEM fields. We aim to provide them with the necessary tools and
+                knowledge to pursue successful careers in these fields in the future, helping to close the gender
+                gap in STEM and build a better, more equitable world for everyone.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </section><!-- End About Section -->
+
+                <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+        <div class="container" data-aos="fade-up">
+          <div class="row justify-content-right">
+                    <div class="col-md-4 col-lg-3 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'STEM_tours' %}">STEM Tours</a></button>
+                    </div>
+        
+                    <div class="col-md-4 col-lg-3 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'STEM_role_models' %}">STEM Role Models</a></button>
+                    </div>
+        
+                    <div class="col-md-4 col-lg-3 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'STEM_awareness' %}">STEM Awareness</a></button>
+                    </div>
+        
+                    <div class="col-md-4 col-lg-3 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
+                        <button class="btn btn-primary btn-lg"><a class="nav-link" href="{% url 'STEM_sponsorship' %}">STEM Sponsorship</a></button>
+                    </div>
+          </div>
+        </div>
+      </section><!-- End Services Section -->
+</main>
+<!-- End #main -->  
+{%endblock%}

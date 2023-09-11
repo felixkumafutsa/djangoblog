@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Django Central</title>
+      <!-- Favicons -->
+    <link href="{% static 'img/logos/favicon.png' %}" rel="icon">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <meta name="google" content="notranslate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+ 
+    
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    
+  </head>
+
+  <body>
+ <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <div class="logo">
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="{% url 'index' %}"><img src="{% static 'img/logos/navbar.png' %}" alt="" class="img-fluid"></a>
+    </div>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+      <ul>
+        <li class="dropdown"><a class="nav-link" href=""><span>PROGRAMS</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a class="nav-link" href="{% url 'workshops' %}">STEM Workshops</a></li>
+            <li><a class="nav-link" href="{% url 'STEM_tours' %}">STEM Tours</a></li>
+            <li><a class="nav-link" href="{% url 'STEM_role_models' %}">STEM Role Models</a></li>
+            <li><a class="nav-link" href="{% url 'STEM_awareness' %}">STEM Awareness</a></li>
+            <li><a class="nav-link" href="{% url 'STEM_sponsorship' %}">STEM Sponsorship</a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown"><a class="nav-link" href="#"><span>GET INVOLVED</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a class="nav-link" href="{% url 'partner_with_us' %}">Partner With Us</a></li>
+            <li><a class="nav-link" href="{% url 'volunteer_with_us' %}">Volunteer With Us</a></li>
+          </ul>
+        </li>
+        
+        <li><a class="nav-link scrollto" href="">TUTORIALS</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'news' %}">NEWS</a></li>
+
+        <li class="dropdown"><a class="nav-link" href="#"><span>ABOUT US</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a class="nav-link" href="{% url 'team' %}">Our Team</a></li>
+            <li><a class="nav-link" href="#">Our Volunteers</a></li>
+            <li><a class="nav-link" href="{% url 'about' %}">About Us</a></li>
+          </ul>
+        </li>
+
+        <li><a class="getstarted scrollto nav-link" href="#about">DONATE</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+  </div>
+</header><!-- End Header -->
+
+
+            {% block content %} 
+          <!-- Content Goes here -->
+            {% endblock content %}
+
+         
+    <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <img src="{% static 'img/logos/fotter.png' %}" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>CONTACT</h4>
+              <p><i class="bx bx-phone bx-sm bx-flashing-hover"></i>girlengineer.org@gmail.com</p>
+              <p><i class="bx bx-envelope bx-sm bx-flashing-hover"></i>+265 995 68 01 35</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Get Our Newsletter</h4>
+            <form action="" method="post">
+              <input type="email" name="email" placeholder="Type email address">
+              <input type="submit" class="btn btn-sm" value="Subscribe">
+            </form>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+           <div class="social-links mt-3">
+              <a href="https://twitter.com/girlengineer7" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="https://www.facebook.com/girlengineer7" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="https://www.instagram.com/girlengineer7" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="https://www.youtube.com/@girlengineer" class="google-plus"><i class="bx bxl-youtube"></i></a>
+              <a href="https://www.linkedin.com/company/girl-engineer" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+            <div class="social-links mt-3">
+              <button id="donate" type="submit" class="btn">DONATE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-0.2">
+      <hr/>
+    </div>
+   
+    <div class="container  d-flex justify-content-center"> 
+      <div class="copyright">
+        &copy; Copyright <strong><span>Girl Engineer</span></strong>. | &nbsp;
+      </div>
+      <div class="credits">
+        <a href="">Privacy Policy</a>
+      </div>&nbsp; | &nbsp;
+      <div class="credits">
+        <a href="">Terms and Conditions</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+     <!-- Main JS File -->
+  <script src="{% static 'js/base.js' %}"></script>
+  </body>
+</html>

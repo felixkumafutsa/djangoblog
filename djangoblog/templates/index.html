@@ -1,0 +1,288 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h3 style="font-weight:700; color:white;">STOP MOTION ANIMATION PROJECT FOR GIRLS</h3>
+          <h4 style="font-weight:700; color:white;">Through this project, we aim to provide girls in our
+            community with an opportunity to learn and create
+            Stop motion animation videos while developing skills
+            in technology, creativity, and teamwork.</h4>
+          <div>
+            <a href="#about" class="btn-get-started scrollto">DONATE</a>
+            <a href="#about" class="btn-donate scrollto">READ MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="0" class="purecounter">1</span>
+            <p>WORKSHOPS DELIVERED</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="0" class="purecounter">1</span>
+            <p>SCHOOLS REACHED</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="0" class="purecounter">5</span>
+            <p>GIRLS IMPACTED</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="0" class="purecounter">11</span>
+            <p>CURRENT VOLUNTEERS</p>
+          </div>
+
+        </div>
+        <hr/>
+      </div>
+    </section>
+    <!-- End Counts Section -->
+
+    <!-- ======= what we do Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p>What we do</p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 col-md-8 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/what_we_do/workshops.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/what_we_do/workshops.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-8 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/what_we_do/tour.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/what_we_do/tour.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-8 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/what_we_do/role_models.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/what_we_do/role_models.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-8 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/what_we_do/awareness.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/what_we_do/awareness.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-8 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/what_we_do/sponsorship.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/what_we_do/sponsorship.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-8 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/what_we_do/all.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/what_we_do/all.jpg' %}.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End what we do Section -->
+
+    <!-- ======= what mobile STEM workshop Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p>Primary School STEM workshops</p>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/workshops/anime_1.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/workshops/anime_1.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 2</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/workshops/wind.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/workshops/wind.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 2</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/workshops/engineering.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/workshops/engineering.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>App 3</h4>
+                <p>App</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/workshops/electricity.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/workshops/electricity.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 1</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/workshops/coding.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/workshops/coding.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Card 3</h4>
+                <p>Card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'img/workshops/car.jpg' %}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'img/workshops/car.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+              </div>
+              <div class="portfolio-info">
+                <h4>Web 3</h4>
+                <p>Web</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End mobile STEM workshop Section -->
+
+        <!-- ======= what mobile STEM Lab Section ======= -->
+        <section id="portfolio" class="portfolio">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-title">
+              <p>Mobile STEM Lab</p>
+            </div>
+    
+            <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+    
+              <div class="col-lg-12 col-md-12 portfolio-item filter-web">
+                <div class="portfolio-wrap">
+                  <img src="{% static 'img/lab/lab.jpg' %}" class="img-fluid" alt="">
+                  <div class="portfolio-links">
+                    <a href="{% static 'img/lab/lab.jpg' %}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bi bi-plus"></i></a>
+                    <a href="portfolio-details.html" title="More Details"><i class="bi bi-link"></i></a>
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Web 3</h4>
+                    <p>Web</p>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+        </section><!-- End mobile STEM Lab Section -->
+
+</main><!-- End #main -->  
+{%endblock%}
