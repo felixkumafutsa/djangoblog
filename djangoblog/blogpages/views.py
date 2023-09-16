@@ -25,6 +25,8 @@ def team(request):
 def partner_with_us(request):
     return render(request, 'partner_with_us.html')
 
+def tutorials(request):
+    return render(request, 'tutorials.html')
 
 def volunteer_with_us(request):
     return render(request, 'volunteer_with_us.html')

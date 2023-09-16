@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Django Central</title>
+    <title>Girl Engineer</title>
       <!-- Favicons -->
     <link href="{% static 'img/logos/favicon.png' %}" rel="icon">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
@@ -34,7 +34,10 @@
 
     <nav id="navbar" class="navbar navbar-expand-lg">
       <ul>
-        <li class="dropdown"><a class="nav-link" href=""><span>PROGRAMS</span> <i class="bi bi-chevron-down"></i></a>
+        <li><a class="nav-link scrollto" href="{% url 'index' %}">HOME</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'news' %}">NEWS</a></li>
+        <li><a class="nav-link scrollto" href="{% url 'tutorials' %}">TUTORIALS</a></li>
+        <li class="dropdown"><a class="nav-link" href=""><span>WHAT WE DO</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a class="nav-link" href="{% url 'workshops' %}">STEM Workshops</a></li>
             <li><a class="nav-link" href="{% url 'STEM_tours' %}">STEM Tours</a></li>
@@ -51,9 +54,6 @@
           </ul>
         </li>
         
-        <li><a class="nav-link scrollto" href="">TUTORIALS</a></li>
-        <li><a class="nav-link scrollto" href="{% url 'news' %}">NEWS</a></li>
-
         <li class="dropdown"><a class="nav-link" href="#"><span>ABOUT US</span> <i class="bi bi-chevron-down"></i></a>
           <ul>
             <li><a class="nav-link" href="{% url 'team' %}">Our Team</a></li>
@@ -82,7 +82,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <img src="{% static 'img/logos/fotter.png' %}" alt="" class="img-fluid">
+            <img src="{% static 'img/logos/fotter.png' %}" alt="" style="width:150px;height:115px;" class="img-fluid">
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">

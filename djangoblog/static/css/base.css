@@ -353,10 +353,24 @@ body {
     margin: 72px 0 -72px 0;
   }
 
-  #hero1 {
+  #hero-workshops {
     width: 100%;
     height: 70vh;
     background-image: url('../img/pages/workshops.png') ;
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
+    border-bottom: 2px solid #fcebe3;
+    margin: 72px 0 -72px 0;
+  }
+
+  #hero-banner {
+    width: 100%;
+    height: 10px;
+    background-image: url('../img/pages/banner.jpg') ;
     background-repeat:no-repeat;
     -webkit-background-size:cover;
     -moz-background-size:cover;
@@ -867,72 +881,6 @@ body {
   }
   
   /*--------------------------------------------------------------
-  # F.A.Q
-  --------------------------------------------------------------*/
-  .faq {
-    padding: 60px 0;
-  }
-  
-  .faq .faq-list {
-    padding: 0;
-    list-style: none;
-  }
-  
-  .faq .faq-list li {
-    border-bottom: 1px solid #eae7e5;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .faq .faq-list .question {
-    display: block;
-    position: relative;
-    font-family: #eb5d1e;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    font-weight: 600;
-    padding-left: 25px;
-    cursor: pointer;
-    color: #c54811;
-    transition: 0.3s;
-  }
-  
-  .faq .faq-list i {
-    font-size: 16px;
-    position: absolute;
-    left: 0;
-    top: -2px;
-  }
-  
-  .faq .faq-list p {
-    margin-bottom: 0;
-    padding: 10px 0 0 25px;
-  }
-  
-  .faq .faq-list .icon-show {
-    display: none;
-  }
-  
-  .faq .faq-list .collapsed {
-    color: #343a40;
-  }
-  
-  .faq .faq-list .collapsed:hover {
-    color: #eb5d1e;
-  }
-  
-  .faq .faq-list .collapsed .icon-show {
-    display: inline-block;
-    transition: 0.6s;
-  }
-  
-  .faq .faq-list .collapsed .icon-close {
-    display: none;
-    transition: 0.6s;
-  }
-  
-  /*--------------------------------------------------------------
   # Team
   --------------------------------------------------------------*/
   .team {
@@ -944,8 +892,10 @@ body {
     text-align: center;
     margin-bottom: 20px;
     background: #343a40;
-    position: relative;
+    position: absolute;
     overflow: hidden;
+    border: 1px rgb(226, 108, 11) solid;
+    border-radius: 50%;
   }
   
   .team .member .member-info {
@@ -1023,6 +973,101 @@ body {
     transition: left ease-in-out 0.3s;
   }
   
+ 
+  /*--------------------------------------------------------------
+  # tutorials
+  --------------------------------------------------------------*/
+  .tutorials {
+    background: #fff;
+    padding: 60px 0;
+  }
+  
+  .tutorials .tutorial {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #343a40;
+    position: relative;
+    overflow: hidden;
+    border: 1px rgb(226, 108, 11) solid;
+  }
+  
+  .tutorials .tutorial .tutorial-info {
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+  }
+  
+  .tutorials .tutorial .tutorial-info-content {
+    position: absolute;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    transition: bottom 0.4s;
+  }
+  
+  .tutorials .tutorial .tutorial-info-content h4 {
+    font-weight: 700;
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .tutorials .tutorial .tutorial-info-content span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  .tutorials .tutorial .social {
+    position: absolute;
+    left: -50px;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    transition: left ease-in-out 0.3s;
+    background: rgba(78, 64, 57, 0.6);
+    text-align: center;
+  }
+  
+  .tutorials .tutorial .social a {
+    transition: color 0.3s;
+    display: block;
+    color: #fff;
+    margin-top: 15px;
+  }
+  
+  .tutorials .tutorial .social a:hover {
+    color: #eb5d1e;
+  }
+  
+  .tutorials .tutorial .social i {
+    font-size: 18px;
+    margin: 0 2px;
+  }
+  
+  .tutorials .tutorial:hover .tutorial-info {
+    background: linear-gradient(0deg, rgba(78, 64, 57, 0.95) 0%, rgba(78, 64, 57, 0.95) 15%, rgba(255, 255, 255, 0) 100%);
+    opacity: 1;
+    transition: 0.4s;
+  }
+  
+  .tutorials .tutorial:hover .tutorial-info-content {
+    bottom: 30px;
+    transition: bottom 0.4s;
+  }
+  
+  .tutorials .tutorial:hover .social {
+    left: 0;
+    transition: left ease-in-out 0.3s;
+  }
+  
+  
+
   /*--------------------------------------------------------------
   # Clients
   --------------------------------------------------------------*/
@@ -1246,6 +1291,9 @@ body {
     background: #333333;
   }
   
+  #footer .footer-top .footer-contact {
+    height: 100 px;
+  }
   
   #footer .footer-top .footer-contact h4 {
     font-size: 22px;
