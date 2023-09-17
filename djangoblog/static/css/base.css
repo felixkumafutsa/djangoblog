@@ -889,10 +889,9 @@ body {
   }
   
   .team .member {
-    text-align: center;
+    width: 80%;
     margin-bottom: 20px;
     background: #343a40;
-    position: absolute;
     overflow: hidden;
     border: 1px rgb(226, 108, 11) solid;
     border-radius: 50%;
@@ -901,11 +900,13 @@ body {
   .team .member .member-info {
     opacity: 0;
     position: absolute;
+    width: 80%;
     bottom: 0;
     top: 0;
     left: 0;
     right: 0;
     transition: 0.2s;
+    border-radius: 10%;
   }
   
   .team .member .member-info-content {
@@ -936,6 +937,7 @@ body {
     top: 0;
     bottom: 0;
     width: 50px;
+    border-radius: 20%;
     transition: left ease-in-out 0.3s;
     background: rgba(78, 64, 57, 0.6);
     text-align: center;
@@ -989,6 +991,7 @@ body {
     position: relative;
     overflow: hidden;
     border: 1px rgb(226, 108, 11) solid;
+    border-radius: 4%;
   }
   
   .tutorials .tutorial .tutorial-info {
@@ -1016,38 +1019,14 @@ body {
     color: #fff;
   }
   
-  .tutorials .tutorial .tutorial-info-content span {
-    font-style: italic;
-    display: block;
-    font-size: 13px;
+  .tutorials .tutorial .tutorial-info-content button {
     color: #fff;
+    border: 1px solid white;
   }
   
-  .tutorials .tutorial .social {
-    position: absolute;
-    left: -50px;
-    top: 0;
-    bottom: 0;
-    width: 50px;
-    transition: left ease-in-out 0.3s;
-    background: rgba(78, 64, 57, 0.6);
-    text-align: center;
-  }
-  
-  .tutorials .tutorial .social a {
-    transition: color 0.3s;
-    display: block;
-    color: #fff;
-    margin-top: 15px;
-  }
-  
-  .tutorials .tutorial .social a:hover {
-    color: #eb5d1e;
-  }
-  
-  .tutorials .tutorial .social i {
-    font-size: 18px;
-    margin: 0 2px;
+  .tutorials .tutorial .tutorial-info-content button:hover {
+    color:white ;
+    background-color: #eb5d1e;
   }
   
   .tutorials .tutorial:hover .tutorial-info {
@@ -1059,11 +1038,6 @@ body {
   .tutorials .tutorial:hover .tutorial-info-content {
     bottom: 30px;
     transition: bottom 0.4s;
-  }
-  
-  .tutorials .tutorial:hover .social {
-    left: 0;
-    transition: left ease-in-out 0.3s;
   }
   
   
